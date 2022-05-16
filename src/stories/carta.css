@@ -1,0 +1,33 @@
+.h1{
+  font-weight: lighter;
+}
+
+.storybook-card {
+
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+.size--sm {
+  height: auto;
+  width: 10rem;
+
+}
+
+.size--md {
+  height: 7rem;
+  width: 24rem;
+
+}
+
+.size--lg {
+  height: 15rem;
+  width: 30rem;
+
+}
+
+.storybook-card:hover{
+  background-color: rgb(224, 245, 192);
+  border:solid rgb(122, 150, 80) 1px;
+  cursor: pointer;
+}
