@@ -3,25 +3,24 @@
 }
 
 .storybook-card {
-
   border-radius: 10px;
   border: solid black 2px;
+    height: auto;
+    margin: 1rem;
+    display: inline-block
 }
 
 .size--sm {
-  height: auto;
   width: 10rem;
 
 }
 
 .size--md {
-  height: 7rem;
   width: 24rem;
 
 }
 
 .size--lg {
-  height: 15rem;
   width: 30rem;
 
 }
