@@ -1,6 +1,6 @@
 import React from "react";
-import { Titulo } from "./Titulo";
-import { Carta } from "./Carta";
+import { Titulo } from "../../Titulo";
+import { Carta } from "../../Carta";
 //import { Header } from "./Header";
 import "./page.css";
 

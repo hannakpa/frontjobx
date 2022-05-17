@@ -5,13 +5,22 @@ import "./badge.css";
 /**
 componente que se imprimira
  */
-export const Badge = ({ backgroundColor, size, texto, ...args }) => (
+
+export const Badge = ({ backgroundColor, size, texto, label, ...args }) => (
   <>
-    {texto.map((elemento) => (
+    {texto ? (
+      <>
+        {texto.map((elemento) => (
+          <span className={`tip--${size}`} style={backgroundColor && { backgroundColor }} {...args}>
+            {elemento}
+          </span>
+        ))}
+      </>
+    ) : (
       <span className={`tip--${size}`} style={backgroundColor && { backgroundColor }} {...args}>
-        {elemento}
+        {label}
       </span>
-    ))}
+    )}
   </>
 );
 

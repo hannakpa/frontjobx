@@ -1,4 +1,4 @@
-import { Page } from "./stories/Page";
+import { Page } from "./stories/Global/Page/Page";
 
 import "./App.css";
 
