@@ -1,21 +1,22 @@
 
-h1 {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
   line-height: 1;
   margin: 2rem 0;
+  display: block;
   text-align:center;
 }
 
 
 .storybook-title--sm {
-  font-size: 1.5rem;
-}
-
-.storybook-title--md {
   font-size: 2rem;
 }
 
+.storybook-title--md {
+  font-size: 5rem;
+}
+
 .storybook-title--lg {
-  font-size: 3rem;
+  font-size: 7rem;
 }

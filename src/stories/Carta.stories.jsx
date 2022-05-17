@@ -8,10 +8,10 @@ export default {
   component: Carta,
 };
 
-const Plantilla = ({ data, ...args }) => (
+const PlantillaCarta = ({ data, ...args }) => (
   <>
     {data.map((obj, index) => (
-      <Carta {...args} label={obj.title} key={index}></Carta>
+      <Carta {...args} label={obj} key={index} />
     ))}
   </>
 );
@@ -23,7 +23,7 @@ const Plantilla = ({ data, ...args }) => (
 //   desc: "Descripcion",
 // };
 
-export const Lista = Plantilla.bind({});
+export const Lista = PlantillaCarta.bind({});
 Lista.args = {
   data: [
     {

@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 //import { Button } from './Button';
 import "./tituloCarta.css";
 
-export const TituloCarta = ({ label, color, fontSize }) => (
+export const TituloCarta = ({ titulo, color, fontSize }) => (
   <h3 className={`storybook-titulo--${fontSize}`} style={color && { color }}>
-    {label}
+    {titulo}
   </h3>
 );
 
