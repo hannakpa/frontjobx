@@ -3,7 +3,7 @@ import React from "react";
 import { Titulo } from "./Titulo";
 
 export default {
-  title: "Example/Title",
+  title: "Partes/Titulo",
   component: Titulo,
   argTypes: {
     color: { control: "color" },

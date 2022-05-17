@@ -9,14 +9,12 @@ export const Page = () => {
     <body>
       {/* <Header user={user} onLogin={() => setUser({ name: "Jane Doe" })} onLogout={() => setUser(undefined)} onCreateAccount={() => setUser({ name: "Jane Doe" })} /> */}
 
-      <section>
-        {/* PONER AQUI LAS CARTAS */}
-        <div className="tip-wrapper">
-          <Titulo />
-          <Carta />
-          <span className="tip">Tip</span>
-        </div>
-      </section>
+      {/* PONER AQUI LAS CARTAS */}
+      <div className="tip-wrapper">
+        <Titulo />
+        <Carta />
+        <span className="tip">Tip</span>
+      </div>
     </body>
   );
 };
