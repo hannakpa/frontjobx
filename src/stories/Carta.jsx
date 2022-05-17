@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { TituloCarta } from "./TituloCarta";
 import { Titulo } from "./Titulo";
-//import { Button } from './Button';
+import { Badge } from "./Badge";
 import "./carta.css";
 
 export const Carta = ({ size, label }) => (
@@ -10,6 +10,7 @@ export const Carta = ({ size, label }) => (
     {/* <h1>{label.title}</h1> */}
     <TituloCarta titulo={label.title} />
     <p style={{ textAlign: "center" }}>{label.desc}</p>
+    <Badge texto={label.tags} />
   </div>
 );
 
