@@ -2,9 +2,12 @@ import React from "react";
 //import { within, userEvent } from "@storybook/testing-library";
 
 import { Page } from "./Page";
+import { Titulo } from "./Titulo";
+import { TituloCarta } from "./TituloCarta";
+import { Carta } from "./Carta";
 
 export default {
-  title: "Example/Page",
+  title: "Page/Page",
   component: Page,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
@@ -12,7 +15,36 @@ export default {
   },
 };
 
-const Template = (args) => <Page {...args} />;
+const Plantilla = ({ data, ...args }) => (
+  <>
+    <Titulo />
+
+    {data.map((obj) => (
+      <Carta {...args}>
+        <TituloCarta label={obj.title} />
+        <p>{obj.desc}</p>
+      </Carta>
+    ))}
+  </>
+);
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-export const User = Template.bind({});
+export const Lista = Plantilla.bind({});
+Lista.args = {
+  data: [
+    {
+      title: "Crew",
+      desc: "Lista de regalos para el grupo Crew",
+    },
+    {
+      title: "Family",
+      desc: "Lista de regalos para el grupo Family",
+    },
+    {
+      title: "Friends",
+      desc: "Lista de regalos para el grupo Friends",
+    },
+  ],
+};
+
+///titlo descripcion y tags

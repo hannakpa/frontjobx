@@ -4,9 +4,8 @@ import PropTypes from "prop-types";
 //import { Button } from './Button';
 import "./carta.css";
 
-export const Carta = ({ label, size, desc }) => (
+export const Carta = ({ size, desc }) => (
   <div className={`storybook-card size--${size}`}>
-    <h1>{label}</h1>
     <p style={{ textAlign: "center" }}>{desc}</p>
   </div>
 );

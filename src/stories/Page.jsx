@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Titulo } from "./Titulo";
+import { Carta } from "./Carta";
 //import { Header } from "./Header";
 import "./page.css";
 
@@ -11,6 +12,8 @@ export const Page = () => {
       <section>
         {/* PONER AQUI LAS CARTAS */}
         <div className="tip-wrapper">
+          <Titulo />
+          <Carta />
           <span className="tip">Tip</span>
         </div>
       </section>
