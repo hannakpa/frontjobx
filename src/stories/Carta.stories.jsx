@@ -1,13 +1,20 @@
 import React from "react";
 
 import { Carta } from "./Carta";
+import { TituloCarta } from "./TituloCarta";
 
 export default {
   title: "Body/Carta",
   component: Carta,
 };
 
-const Plantilla = (args) => <Carta {...args} />;
+const Plantilla = ({ data, ...args }) => (
+  <>
+    {data.map((obj, index) => (
+      <Carta {...args} label={obj.title} key={index}></Carta>
+    ))}
+  </>
+);
 
 // export const Size = Plantilla.bind({});
 // Size.args = {
@@ -33,5 +40,4 @@ Lista.args = {
     },
   ],
   size: "sm",
-  desc: "Descripcion",
 };

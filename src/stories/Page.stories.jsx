@@ -3,8 +3,6 @@ import React from "react";
 
 import { Page } from "./Page";
 import { Titulo } from "./Titulo";
-import { TituloCarta } from "./TituloCarta";
-import { Carta } from "./Carta";
 
 export default {
   title: "Page/Page",
@@ -17,11 +15,11 @@ export default {
 
 const Plantilla = ({ data, ...args }) => (
   <>
-    <Titulo />
+    <Titulo {...args} />
 
     {data.map((obj) => (
       <Carta {...args}>
-        <TituloCarta label={obj.title} />
+        <TituloCarta {...args} label={obj.title} />
         <p>{obj.desc}</p>
       </Carta>
     ))}

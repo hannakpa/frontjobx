@@ -10,10 +10,9 @@ export default {
   },
 };
 
-const Template = (args) => <TituloCarta {...args} />;
+const Template = ({ label, args }) => <TituloCarta {...args} label={label} />;
 
 export const Black = Template.bind({});
 Black.args = {
-  label: "Escribe tu título",
   color: "black",
 };
