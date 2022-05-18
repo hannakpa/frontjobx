@@ -2,6 +2,8 @@ import React from "react";
 
 import { Titulo } from "./Titulo";
 
+///Titulo global, de la página
+//////organización en Storybook. Carpeta Partes>Titulo
 export default {
   title: "Partes/Titulo",
   component: Titulo,
@@ -10,8 +12,10 @@ export default {
   },
 };
 
+///el componente Titulo recibe los argumentos de label y color.
 const Template = (args) => <Titulo {...args} />;
 
+///hay tres stories: Red, Black y Blue
 export const Red = Template.bind({});
 Red.args = {
   label: "Escribe tu título",

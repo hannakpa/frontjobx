@@ -2,8 +2,9 @@ import React from "react";
 ///importo el jsx de Badge
 import { Badge } from "./Badge";
 
+//////organización en Storybook. Carpeta Partes>Carta>Badge
 export default {
-  title: "Partes/Carta/Badge", ///le doy titulo a la seccion que estara a la izquierda
+  title: "Partes/Carta/Badge",
   component: Badge,
   argTypes: {
     backgroundColor: { control: "color" },

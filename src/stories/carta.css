@@ -12,6 +12,7 @@
   
 }
 
+/* diferentes tamaños según el que se seleccione en el control de Carta.stories.jsx*/
 .size--sm {
   min-width: 15rem;
 

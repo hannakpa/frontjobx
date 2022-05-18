@@ -9,11 +9,13 @@ export const TituloCarta = ({ titulo, fontSize, color, ...props }) => (
   </h4>
 );
 
+//definición de los tipos de propiedad
 TituloCarta.propTypes = {
   color: PropTypes.string,
   fontSize: PropTypes.oneOf(["sm", "md", "lg"]),
 };
 
+//tamaño predefinido
 TituloCarta.defaultProps = {
   fontSize: "md",
 };

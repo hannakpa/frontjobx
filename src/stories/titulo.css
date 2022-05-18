@@ -9,6 +9,8 @@ h3 {
 
 }
 
+/* diferentes tamaños según el que se seleccione en el control de Titulo.stories.jsx*/
+
 
 .storybook-title--sm {
   font-size: 1.5rem;

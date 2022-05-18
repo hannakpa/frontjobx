@@ -10,6 +10,9 @@ span {
   vertical-align: top;
 }
 
+
+/* diferentes tamaños según el que se seleccione en el control de Badge.stories.jsx*/
+
 .tip--small {
     font-size: 13px;
       line-height: 12px;

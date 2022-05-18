@@ -1,5 +1,6 @@
-
-
+/* 
+estilo para section que envuelve cartas,
+en formato row */
 
 .responsive-box--row {
   display: flex;
@@ -7,6 +8,7 @@
   overflow-x: scroll;
 }
 
+/* estilo row responsive */
 
 @media (max-width: 600px) {
   .responsive-box--row {
@@ -17,7 +19,8 @@
   }
 
 }
-
+/* 
+estilo para section que envuelve cartas, en formato columna */
 
 .responsive-box--column {
   display: flex;

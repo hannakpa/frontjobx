@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "./Page";
+import Page from "./Page"; /// el componente Page.jxs, al tener una exportación default requiere de una importación sin llaves.
 
 export default {
   title: "Global/Page",

@@ -1,7 +1,7 @@
 import React from "react";
-
 import { Carta } from "./Carta";
 
+///organización en Storybook. Carpeta Partes>Carta
 export default {
   title: "Partes/Carta",
   component: Carta,
@@ -15,13 +15,8 @@ const PlantillaCarta = ({ data, ...args }) => (
   </>
 );
 
-// export const Size = Plantilla.bind({});
-// Size.args = {
-//   label: "Escribe tu título",
-//   size: "sm",
-//   desc: "Descripcion",
-// };
-
+///en la story Lista puedo modificar los datos que ingreso para la creación de cada carta y también modificar su tamaño.
+///Este array de data viene predefinido en el front en este caso, pero bien puede venir a partir de una consulta get a una base de datos con toda esta información.
 export const Lista = PlantillaCarta.bind({});
 Lista.args = {
   data: [
