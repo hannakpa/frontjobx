@@ -28,7 +28,7 @@
 }
 
 .storybook-card:hover{
-  background-color: rgb(224, 245, 192);
-  border:solid rgb(122, 150, 80) 2px;
+  background-color: rgb(235, 213, 255);
+  border:solid rgb(188, 117, 255) 2px;
   cursor: pointer;
 }

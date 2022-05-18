@@ -19,6 +19,6 @@ Carta.propTypes = {
 };
 
 Carta.defaultProps = {
-  size: "sm",
+  size: "md",
   onClick: undefined,
 };
