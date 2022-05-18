@@ -4,7 +4,7 @@ import "./app.css";
 import { Carta } from "./Carta";
 import { Titulo } from "./Titulo";
 
-function App({ args, data, direction, ...props }) {
+function Page({ args, data, direction, ...props }) {
   return (
     <div className="App">
       <Titulo label={"Mis regalos"} />
@@ -17,12 +17,12 @@ function App({ args, data, direction, ...props }) {
   );
 }
 
-App.PropTypes = {
+Page.PropTypes = {
   direction: PropTypes.oneOf(["row", "column"]),
 };
 
-App.defaultProps = {
+Page.defaultProps = {
   direction: "row",
 };
 
-export default App;
+export default Page;

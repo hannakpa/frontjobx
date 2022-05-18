@@ -1,9 +1,9 @@
 import React from "react";
-import App from "./App";
+import Page from "./Page";
 
 export default {
-  title: "Global/App",
-  component: App,
+  title: "Global/Page",
+  component: Page,
   argTypes: {
     direction: {
       options: ["row", "column"],
@@ -12,10 +12,10 @@ export default {
   },
 };
 ///plantillaCarta recibe los datos que le paso a los argumentos. estos argumentos los imprime el Carta.jsx según lo que yo le pida
-const PlantillaCarta = (args) => <App {...args} />;
+const PlantillaCarta = (args) => <Page {...args} />;
 
-export const Lista = PlantillaCarta.bind({});
-Lista.args = {
+export const Plantilla = PlantillaCarta.bind({});
+Plantilla.args = {
   data: [
     {
       title: "Crew",

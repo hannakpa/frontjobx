@@ -3,7 +3,7 @@ import React from "react";
 import { Badge } from "./Badge";
 
 export default {
-  title: "Partes/Badge", ///le doy titulo a la seccion que estara a la izquierda
+  title: "Partes/Carta/Badge", ///le doy titulo a la seccion que estara a la izquierda
   component: Badge,
   argTypes: {
     backgroundColor: { control: "color" },

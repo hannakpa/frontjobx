@@ -3,7 +3,7 @@ import React from "react";
 import { TituloCarta } from "./TituloCarta";
 
 export default {
-  title: "Partes/TituloCarta",
+  title: "Partes/Carta/TituloCarta",
   component: TituloCarta,
   argTypes: {
     color: { control: "color" },
