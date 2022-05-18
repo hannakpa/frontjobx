@@ -5,13 +5,14 @@
 .storybook-card {
   border-radius: 10px;
   border: solid black 2px;
-    height: auto;
+    min-height: auto;
     margin: 1rem;
-    display: inline-block
+    display: inline-block;
+    padding: 0.5rem;
 }
 
 .size--sm {
-  width: 10rem;
+  min-width: 10rem;
 
 }
 
@@ -27,6 +28,6 @@
 
 .storybook-card:hover{
   background-color: rgb(224, 245, 192);
-  border:solid rgb(122, 150, 80) 1px;
+  border:solid rgb(122, 150, 80) 2px;
   cursor: pointer;
 }

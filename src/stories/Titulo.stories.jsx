@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Titulo } from "./Titulo";
+import Titulo from "./Titulo";
 
 export default {
   title: "Partes/Titulo",

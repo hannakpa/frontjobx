@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 import "./tituloCarta.css";
 
 export const TituloCarta = ({ titulo, color, fontSize }) => (
-  <h3 className={`storybook-title--${fontSize}`} style={color && { color }}>
+  <h4 className={`storybook-title--${fontSize}`} style={color && { color }}>
     {titulo}
-  </h3>
+  </h4>
 );
 
 TituloCarta.propTypes = {

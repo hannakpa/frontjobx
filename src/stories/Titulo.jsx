@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 import "./titulo.css";
 
 export const Titulo = ({ label, color, fontSize }) => (
-  <h1 className={`storybook-title--${fontSize}`} style={color && { color }}>
+  <h3 className={`storybook-title--${fontSize}`} style={color && { color }}>
     {label}
-  </h1>
+  </h3>
 );
 
 Titulo.propTypes = {

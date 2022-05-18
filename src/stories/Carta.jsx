@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { TituloCarta } from "./TituloCarta";
-import { Titulo } from "./Titulo";
 import { Badge } from "./Badge";
 import "./carta.css";
 
