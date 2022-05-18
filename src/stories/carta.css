@@ -12,17 +12,17 @@
 }
 
 .size--sm {
-  min-width: 10rem;
+  min-width: 15rem;
 
 }
 
 .size--md {
-  width: 24rem;
+  min-width: 24rem;
 
 }
 
 .size--lg {
-  width: 30rem;
+  min-width: 30rem;
 
 }
 
