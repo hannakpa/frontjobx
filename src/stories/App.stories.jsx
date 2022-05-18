@@ -12,7 +12,7 @@ export default {
   },
 };
 ///plantillaCarta recibe los datos que le paso a los argumentos. estos argumentos los imprime el Carta.jsx según lo que yo le pida
-const PlantillaCarta = ({ data, args }) => <App {...args} data={data} />;
+const PlantillaCarta = ({ data, args, direction }) => <App {...args} data={data} direction={direction} />;
 
 export const Lista = PlantillaCarta.bind({});
 Lista.args = {

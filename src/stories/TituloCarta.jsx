@@ -1,10 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-//import { Button } from './Button';
 import "./tituloCarta.css";
 
-export const TituloCarta = ({ titulo, color, fontSize }) => (
+export const TituloCarta = ({ titulo, fontSize, color, ...args }) => (
   <h4 className={`storybook-title--${fontSize}`} style={color && { color }}>
     {titulo}
   </h4>
@@ -16,6 +14,5 @@ TituloCarta.propTypes = {
 };
 
 TituloCarta.defaultProps = {
-  color: "black",
   fontSize: "md",
 };

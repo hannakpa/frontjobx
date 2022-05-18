@@ -1,14 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./app.css";
 import { Carta } from "./Carta";
 import { Titulo } from "./Titulo";
-import PropTypes from "prop-types";
 
-function App({ args, data, direction }) {
+function App({ args, data, direction, ...props }) {
   return (
     <div className="App">
       <Titulo label={"Mis regalos"} />
-      <section className={`responsive-box--${direction}`}>
+      <section className={`responsive-box--${direction}`} {...props}>
         {data.map((obj, index) => (
           <Carta {...args} label={obj} key={index} />
         ))}
