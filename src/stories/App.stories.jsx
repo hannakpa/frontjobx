@@ -1,25 +1,29 @@
 import React from "react";
-//import { within, userEvent } from "@storybook/testing-library";
-
 import App from "./App";
+import { Carta } from "./Carta";
+import { Titulo } from "./Titulo";
 
 export default {
-  title: "Página/App",
+  title: "Global/App",
   component: App,
-  parameters: {
-    // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: "fullscreen",
+  argTypes: {
+    direction: {
+      options: ["row", "column"],
+      control: { type: "radio" },
+    },
   },
 };
+///plantillaCarta recibe los datos que le paso a los argumentos. estos argumentos los imprime el Carta.jsx según lo que yo le pida
+const PlantillaCarta = ({ data, args }) => <App {...args} data={data} />;
+// export const Size = Plantilla.bind({});
+// Size.args = {
+//   label: "Escribe tu título",
+//   size: "sm",
+//   desc: "Descripcion",
+// };
 
-const Plantilla = (args) => <App {...args} />;
-
-// More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
-
-//////borra///////
-export const Pagina = Plantilla.bind({});
-
-Pagina.args = {
+export const Lista = PlantillaCarta.bind({});
+Lista.args = {
   data: [
     {
       title: "Crew",
@@ -37,7 +41,5 @@ Pagina.args = {
       tags: ["Arte", "Musica"],
     },
   ],
-  size: "sm",
+  direction: "row",
 };
-
-///titlo descripcion y tags

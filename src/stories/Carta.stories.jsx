@@ -1,17 +1,14 @@
 import React from "react";
 
 import { Carta } from "./Carta";
-import { Titulo } from "./Titulo";
 
 export default {
-  title: "Global/Carta",
+  title: "Partes/Carta",
   component: Carta,
 };
 ///plantillaCarta recibe los datos que le paso a los argumentos. estos argumentos los imprime el Carta.jsx según lo que yo le pida
 const PlantillaCarta = ({ data, ...args }) => (
   <>
-    <Titulo label={"Mis regalos"} />
-
     {data.map((obj, index) => (
       <Carta {...args} label={obj} key={index} />
     ))}

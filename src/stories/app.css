@@ -1,0 +1,5 @@
+.responsive-box {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
