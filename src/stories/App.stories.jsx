@@ -19,4 +19,25 @@ const Plantilla = (args) => <App {...args} />;
 //////borra///////
 export const Pagina = Plantilla.bind({});
 
+Pagina.args = {
+  data: [
+    {
+      title: "Crew",
+      desc: "Lista de regalos para el grupo Crew",
+      tags: ["Deporte", "Regalos"],
+    },
+    {
+      title: "Family",
+      desc: "Lista de regalos para el grupo Family",
+      tags: ["Arte", "Regalos"],
+    },
+    {
+      title: "Friends",
+      desc: "Lista de regalos para el grupo Friends",
+      tags: ["Arte", "Musica"],
+    },
+  ],
+  size: "sm",
+};
+
 ///titlo descripcion y tags

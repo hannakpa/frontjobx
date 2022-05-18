@@ -1,14 +1,14 @@
 import React from "react";
 //import "./app.css";
+import { Carta } from "./Carta";
+import { Titulo } from "./Titulo";
 
-function App() {
+function App({ args, data }) {
   return (
     <div className="App">
-      <h1>HOLA</h1>
+      <Titulo label={"Mis regalos"} />
 
-      <div className="responsive-box">
-        <p>soy un div responsive</p>
-      </div>
+      <div className="responsive-box">{Carta}</div>
     </div>
   );
 }

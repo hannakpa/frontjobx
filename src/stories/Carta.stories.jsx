@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Carta } from "./Carta";
-import { TituloCarta } from "./TituloCarta";
+import { Titulo } from "./Titulo";
 
 export default {
   title: "Partes/Carta",
@@ -10,6 +10,8 @@ export default {
 ///plantillaCarta recibe los datos que le paso a los argumentos. estos argumentos los imprime el Carta.jsx según lo que yo le pida
 const PlantillaCarta = ({ data, ...args }) => (
   <>
+    <Titulo label={"Mis regalos"} />
+
     {data.map((obj, index) => (
       <Carta {...args} label={obj} key={index} />
     ))}
