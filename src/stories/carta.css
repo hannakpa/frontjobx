@@ -9,6 +9,7 @@
     margin: 1rem;
     display: inline-block;
     padding: 0.5rem;
+  
 }
 
 .size--sm {
@@ -17,7 +18,7 @@
 }
 
 .size--md {
-  min-width: 24rem;
+  min-width: 20rem;
 
 }
 

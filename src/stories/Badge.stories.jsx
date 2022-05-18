@@ -8,7 +8,7 @@ export default {
   argTypes: {
     backgroundColor: { control: "color" },
     label: {
-      options: ["Deporte", "Arte", "Música"],
+      options: ["Deporte", "Arte", "Música", "Ciencia", "Moda", "Viajes"],
       control: { type: "radio" },
     },
   },
