@@ -3,6 +3,14 @@
   flex-direction: row;
   overflow-x: scroll;
 }
+
+@media (max-width: 600vw) {
+  .responsive-box--row {
+    flex-direction: column;
+    overflow-y: scroll,
+  }
+}
+
 .responsive-box--column {
   display: flex;
   flex-direction: column;
