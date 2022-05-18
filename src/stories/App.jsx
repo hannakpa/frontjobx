@@ -10,7 +10,7 @@ function App({ args, data, direction, ...props }) {
       <Titulo label={"Mis regalos"} />
       <section className={`responsive-box--${direction}`} {...props}>
         {data.map((obj, index) => (
-          <Carta {...args} label={obj} key={index} />
+          <Carta {...props} label={obj} key={index} />
         ))}
       </section>
     </div>

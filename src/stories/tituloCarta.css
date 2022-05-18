@@ -6,17 +6,18 @@ h4 {
   margin: 2rem 0;
   display: block;
   text-align:center;
+    font-style: oblique;
 }
 
 
 .storybook-title--sm {
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 
 .storybook-title--md {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .storybook-title--lg {
-  font-size: 5rem;
+  font-size: 2.5rem;
 }

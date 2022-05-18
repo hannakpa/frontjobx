@@ -28,17 +28,17 @@ Lista.args = {
     {
       title: "Crew",
       desc: "Lista de regalos para el grupo Crew",
-      tags: ["Deporte", "Regalos"],
+      tags: ["Deporte"],
     },
     {
       title: "Family",
       desc: "Lista de regalos para el grupo Family",
-      tags: ["Arte", "Regalos"],
+      tags: ["Moda", "Ciencia"],
     },
     {
       title: "Friends",
       desc: "Lista de regalos para el grupo Friends",
-      tags: ["Arte", "Musica"],
+      tags: ["Arte", "Musica", "Viajes"],
     },
   ],
   size: "sm",

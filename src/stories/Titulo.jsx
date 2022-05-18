@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 //import { Button } from './Button';
 import "./titulo.css";
 
-export const Titulo = ({ label, color, fontSize }) => (
-  <h3 className={`storybook-title--${fontSize}`} style={color && { color }}>
+export const Titulo = ({ label, color, fontSize, ...props }) => (
+  <h3 className={`storybook-title--${fontSize}`} style={color && { color }} {...props}>
     {label}
   </h3>
 );
